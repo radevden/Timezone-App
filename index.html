@@ -5,31 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World clock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  </style>
+  <script src="src/index.js"></script>
+  <title>
+    World clock</title>
 </head>
 
 <body>
   <div class="container">
     <h1>World Clock</h1>
-
     <select id="cities">
       <option value="">Select a city</option>
       <option value="Prague">Prague</option>
       <option value="Madrid">Madrid</option>
       <option value="Oslo">Oslo</option>
     </select>
-
-    <h2>Porto</h2>
-    <div class="date">Thursday 8</div>
-    <div class="time">2:45 PM</div>
-
-    <h2>London</h2>
-    <div class="date">Thursday 8</div>
-    <div class="time">2:45 PM</div>
-
-    <div id="signature">This project was coded by Denisa Radevová and is open sourced on <a
-        href="https://github.com/radevden/Timezone-App.git">Github</a></div>
+    <div class="name">
+      <div>
+        <h2>Porto</h2>
+        <div class="date">Thursday 8 2023</div>
+      </div>
+      <div class="time">2:45:10 <small>PM</small></div>
+    </div>
+    <hr />
+    <div class="name">
+      <div>
+        <h2>London</h2>
+        <div class="date">Thursday 8 2023</div>
+      </div>
+      <div class="time">2:45:10 <small>PM</small></div>
+    </div>
   </div>
+  <div id="signature">This project was coded by Denisa Radevová and is open sourced on <a
+      href="https://github.com/radevden/Timezone-App.git">Github</a></div>
 </body>
 
 </html>

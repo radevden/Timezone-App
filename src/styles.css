@@ -1,0 +1,80 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 4px -9px 22px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: #f9f7fe;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+#cities {
+  padding: 6px;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 15px;
+  border: inherit;
+}
+
+#signature {
+  text-align: center;
+  margin: 8px;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 65%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0;
+}
+
+.time {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+small {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
