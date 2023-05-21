@@ -12,6 +12,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="src/styles.css">
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="src/index.js"></script>
   <title>
     World clock</title>
@@ -20,30 +22,36 @@
 <body>
   <div class="container">
     <h1>World Clock</h1>
-    <select id="cities">
+    <select id="city">
       <option value="">Select a city</option>
       <option value="Prague">Prague</option>
       <option value="Madrid">Madrid</option>
       <option value="Oslo">Oslo</option>
     </select>
-    <div class="name">
-      <div>
-        <h2>Porto</h2>
-        <div class="date">Thursday 8 2023</div>
+
+    <div id="cities">
+      <div class="name" id="porto">
+        <div>
+          <h2>Porto</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"><small>PM</small></div>
       </div>
-      <div class="time">2:45:10 <small>PM</small></div>
-    </div>
-    <hr />
-    <div class="name">
-      <div>
-        <h2>London</h2>
-        <div class="date">Thursday 8 2023</div>
+
+      <hr />
+
+      <div class="name" id="london">
+        <div>
+          <h2>London</h2>
+          <div class="date">Thursday 8 2023</div>
+        </div>
+        <div class="time">2:45:10 <small>PM</small></div>
       </div>
-      <div class="time">2:45:10 <small>PM</small></div>
     </div>
   </div>
   <div id="signature">This project was coded by Denisa Radevová and is open sourced on <a
       href="https://github.com/radevden/Timezone-App.git">Github</a></div>
+  <script src="src/index.js"></script>
 </body>
 
 </html>
