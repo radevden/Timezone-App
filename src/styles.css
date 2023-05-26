@@ -6,10 +6,10 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   box-shadow: 4px -9px 22px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 body {
-  background-color: #f9f7fe;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -35,7 +35,7 @@ select {
   margin: 8px;
 }
 
-.date {
+#date {
   font-size: 14px;
   opacity: 65%;
 }
@@ -63,7 +63,7 @@ hr {
   margin: 22px 0;
 }
 
-.time {
+#time {
   font-size: 42px;
   font-weight: 600;
 }

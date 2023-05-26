@@ -14,7 +14,9 @@
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="src/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-2012-2022.min.js"></script>
   <title>
     World clock</title>
 </head>
@@ -30,12 +32,12 @@
     </select>
 
     <div id="cities">
-      <div class="name" id="porto">
+      <div class="name" id="athens">
         <div>
-          <h2>Porto</h2>
-          <div class="date"></div>
+          <h2>Athens</h2>
+          <div id="date" class="date-athens"></div>
         </div>
-        <div class="time"><small>PM</small></div>
+        <div id="time" class="time-athens"></div>
       </div>
 
       <hr />
@@ -43,9 +45,9 @@
       <div class="name" id="london">
         <div>
           <h2>London</h2>
-          <div class="date">Thursday 8 2023</div>
+          <div id="date" class="date-london"></div>
         </div>
-        <div class="time">2:45:10 <small>PM</small></div>
+        <div id="time" class="time-london"></div>
       </div>
     </div>
   </div>
