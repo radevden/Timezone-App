@@ -22,3 +22,12 @@ function updateTime() {
   );
 }
 setInterval(updateTime, 1000);
+
+function changeCity(event) {
+  let selectedCity = event.target.value;
+  selectedCityTime = moment().tz(selectedCity);
+  console.log(selectedCityTime.format(dddd));
+}
+
+let selectCities = document.querySelector("#cities");
+selectCities.addEventListener("change", changeCity);
