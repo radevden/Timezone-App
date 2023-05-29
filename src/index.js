@@ -24,7 +24,7 @@ function updateTime() {
 
 function changeCity(event) {
   let selectedCity = event.target.value;
-  let cityName = selectedCity.replace("_", "").split("/")[1];
+  let cityName = selectedCity.replace("_", " ").split("/")[1];
   selectedCityTime = moment().tz(selectedCity);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
