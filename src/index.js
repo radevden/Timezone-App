@@ -10,14 +10,26 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );
 
-  //london
-  let londonElement = document.querySelector("#london");
-  let londonDateElement = document.querySelector(".date-london");
-  let londonTimeElement = document.querySelector(".time-london");
+  //toronto
+  let torontoElement = document.querySelector("#toronto");
+  let torontoDateElement = document.querySelector(".date-toronto");
+  let torontoTimeElement = document.querySelector(".time-toronto");
 
-  let londonTimeDate = moment().tz("Europe/London");
-  londonDateElement.innerHTML = londonTimeDate.format("dddd, MMMM Do YYYY");
-  londonTimeElement.innerHTML = londonTimeDate.format(
+  let torontoTimeDate = moment().tz("America/Toronto");
+  torontoDateElement.innerHTML = torontoTimeDate.format("dddd, MMMM Do YYYY");
+  torontoTimeElement.innerHTML = torontoTimeDate.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+
+  //melbourne
+  let melbourneElement = document.querySelector("#melbourne");
+  let melbourneDateElement = document.querySelector(".date-melbourne");
+  let melbourneTimeElement = document.querySelector(".time-melbourne");
+
+  let melbourneTimeDate = moment().tz("Australia/Melbourne");
+  melbourneDateElement.innerHTML =
+    melbourneTimeDate.format("dddd, MMMM Do YYYY");
+  melbourneTimeElement.innerHTML = melbourneTimeDate.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 }
